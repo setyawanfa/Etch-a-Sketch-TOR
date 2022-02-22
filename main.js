@@ -1,4 +1,4 @@
-const defaultSize = 16;
+const defaultSize = 16; //this value should be the same with gridSize in HTML file
 const defaultColor = "black";
 const tableGrid = document.getElementById("table-grid");
 const color = document.getElementsByClassName('color');
@@ -11,21 +11,16 @@ gridsize.value = defaultSize;
 let size = gridsize.value;
 let draw = false;
 
-// window.onmousedown(function(){
-//   draw = true;
-// })
-// window.onmouseup(function(){
-//   draw=false
-// })
+
 
 window.addEventListener('mousedown',function(){
   draw = true;
 })
 
-
 window.addEventListener('mouseup',function(){
   draw = false;
 })
+
 function colorPixel(event){
   this.style.backgroundColor = color[0].value;
 }
